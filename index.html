@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RainSaver to the rescue!</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="grid-container">
+      <section class="image">
+        <div class="image-container">
+          <img
+            class="img main-image"
+            src="./assets/Blue umbrella.png"
+            alt="product"
+          />
+        </div>
+      </section>
+      <div class="heading">
+        <h1 class="title">Custom Umbrella</h1>
+      </div>
+      <div class="colors">
+        <!-- <div class="color-swatch">
+          <input type="radio" checked="checked" />
+          <span class="checkmark"></span>
+        </div> -->
+      </div>
+      <div class="upload">
+        <h4>Customize your umbrella</h4>
+        <p>Upload a logo for instant preview</p>
+        <p>.png and .jpg files only. Max file size is 5MB</p>
+        <label class="logo-upload">
+          <img src="./assets/upload_icon.svg" alt="upload" />
+          <input type="file" accept="image/*" onchange="loadLogo(event)" />
+          <p>
+            UPLOAD LOGO
+          </p>
+        </label>
+      </div>
+    </main>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

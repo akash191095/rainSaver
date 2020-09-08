@@ -1,0 +1,114 @@
+.img {
+  max-width: 100%;
+  transition: filter 1s;
+}
+
+/* Customize the label (the container) */
+.color-swatch {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.color-swatch input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.color-swatch:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.color-swatch input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark > span {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.color-swatch input:checked ~ .checkmark > span {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.color-swatch .checkmark > span {
+  top: 3px;
+  left: 4px;
+  width: 18px;
+  height: 19px;
+  border-radius: 50%;
+  background: white;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.logo-upload {
+  position: relative;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin: 1em 0;
+
+  width: 14em;
+  max-width: 100%;
+  height: 1.5em;
+  background-color: aqua;
+  font-size: 1.8em;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-upload > img {
+  position: absolute;
+  left: 1em;
+}
+
+.image-container {
+  position: relative;
+}
+
+.logo {
+  max-width: 8vmax;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.main-image {
+  max-height: 100%;
+  max-width: 100%;
+}
